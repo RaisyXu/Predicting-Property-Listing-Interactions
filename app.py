@@ -9,7 +9,7 @@ import requests
 # Load your trained model
 # ----------------------
 
-model = joblib.load('models/random_forest_7d_model.pkl')
+model = joblib.load('model/random_forest_7d_model.pkl')
 
 # ----------------------
 # Expected Feature List
