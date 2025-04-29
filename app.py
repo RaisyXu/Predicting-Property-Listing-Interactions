@@ -44,7 +44,6 @@ property_size = st.sidebar.number_input('Property Size (sqft)', min_value=0, val
 photo_count = st.sidebar.number_input('Number of Photos', min_value=0, value=5)
 property_age_days = st.sidebar.number_input('Property Age (days)', min_value=0, value=30)
 locality_freq = st.sidebar.number_input('Locality Popularity (Listing Count)', min_value=0, value=100)
-property_age = st.sidebar.number_input('Property_age (years)', min_value=0, value=100)
 # ----------------------
 # Build the complete input features
 # ----------------------
@@ -55,8 +54,7 @@ user_inputs = {
     'property_size': property_size,
     'photo_count': photo_count,
     'days_since_activation': property_age_days,
-    'locality_freq': locality_freq,
-    'Property_age': Property_age
+    'locality_freq': locality_freq
 }
 
 # Fill in default 0 for missing features
